@@ -1,11 +1,11 @@
 version: 0.2
 phases:
- install:
- commands:
- - echo "Build started"
- build:
- commands:
- - zip -r app.zip appspec.yml portfolio.html scripts/
+  install:
+    commands:
+      - echo "Build started"
+  build:
+    commands:
+      - zip -r app.zip appspec.yml portfolio.html scripts/
 artifacts:
- files:
- - app.zip
+  files:
+    - app.zip
